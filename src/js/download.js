@@ -56,7 +56,7 @@ app.listen(port, () => console.log('Example app listening on port ${data.port}!'
         document.body.appendChild(link);
         link.click();
     } catch (err) {
-        console.log('An error occured/n' + err);
+        alert('An error occured/n' + err);
     }
 }
 

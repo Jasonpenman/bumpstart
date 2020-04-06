@@ -41,7 +41,8 @@
               
 
                 <code spellcheck="false" contenteditable="true" class="lang-bash"
-                  @blur="updateEndpointValue($event, item.key)">  <v-btn class="float-right ma-1" fab color="red darken-4" small outlined top right
+                  @blur="updateEndpointValue($event, item.key)">  
+                  <v-btn class="float-right ma-1" fab color="red darken-4" small outlined top right
                   @click="removeEndpoint(item)">
                   <v-icon>mdi-minus</v-icon>
                 </v-btn>{{ item.value }}</code>
@@ -125,7 +126,7 @@
         res.status(200).send('Hello World!')}`
       }],
       defaultEndpointValue: `(req, res) => {
-        res.status(200).send('Hello World!')}`,
+        res.status(200).send('Hello from the new endpont!')}`,
       example: '',
       useMongoose: false,
       mongooseUrl: '',
